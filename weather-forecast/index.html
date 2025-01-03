@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌡️ Wheather-Forecast 🌫️</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="main-info">
+                <input type="text" placeholder="Cidade" autocomplete="off" id="card-input">
+                <svg id="icon-search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#0d1b2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <h1 id="title">Cidade, Pais</h1>
+                <div class="content-wheather">
+                    <aside>
+                        <img src="https://cdn-icons-png.flaticon.com/512/9402/9402858.png" alt="">
+                    </aside>
+                    <article>
+                        <h1 id="temp">0<sup> C°</sup></h1>
+                        <span id="description">-</span>
+                    </article>
+                </div>
+            </div>
+            <div class="bottom-info">
+                <div class="info-temp">
+                    <aside>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 3V21M18 3L15 6M18 3L21 6M7 15.9998C6.44772 15.9998 6 16.4475 6 16.9998C6 17.5521 6.44772 17.9998 7 17.9998C7.55228 17.9998 8 17.5521 8 16.9998C8 16.4475 7.55228 15.9998 7 15.9998ZM7 15.9998V11.9998M7 16.9998L7.00707 17.0069M11 16.9998C11 19.209 9.20914 20.9998 7 20.9998C4.79086 20.9998 3 19.209 3 16.9998C3 15.9854 3.37764 15.0591 4 14.354L4 6C4 4.34315 5.34315 3 7 3C8.65685 3 10 4.34315 10 6V14.354C10.6224 15.0591 11 15.9854 11 16.9998Z" stroke="#c1121f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </aside>
+                    <article>
+                        <p>Temp. max</p>
+                        <span id="temp_max">0<sup> C°</sup></span>
+                    </article>
+                </div>
+                <div class="info-temp">
+                    <aside>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 3V21M18 21L15 18M18 21L21 18M7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18C7.55228 18 8 17.5523 8 17C8 16.4477 7.55228 16 7 16ZM7 16V12M7 17L7.00707 17.0071M11 17C11 19.2091 9.20914 21 7 21C4.79086 21 3 19.2091 3 17C3 15.9856 3.37764 15.0593 4 14.3542L4 6.00017C4 4.34332 5.34315 3.00017 7 3.00017C8.65685 3.00017 10 4.34332 10 6.00017V14.3542C10.6224 15.0593 11 15.9856 11 17Z" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </aside>
+                    <article>
+                        <p>Temp. min</p>
+                        <span id="temp_min">0<sup> C°</sup</span>
+                    </article>
+                </div>
+                <div class="info-temp">
+                    <aside>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 13.8C19 17.7764 15.866 21 12 21C8.13401 21 5 17.7764 5 13.8C5 12.8452 5.18069 11.9338 5.50883 11.1C6.54726 8.46135 12 3 12 3C12 3 17.4527 8.46135 18.4912 11.1C18.8193 11.9338 19 12.8452 19 13.8Z" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </aside>
+                    <article>
+                        <p>Humidade</p>
+                        <span id="humidity">0 %</span>
+                    </article>
+                </div>
+                <div class="info-temp">
+                    <aside>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2.5 5.5L3.11612 6.11612C3.68206 6.68206 4.44964 7 5.25 7C6.05036 7 6.81794 6.68206 7.38388 6.11612L7.61612 5.88388C8.18206 5.31794 8.94964 5 9.75 5C10.5504 5 11.3179 5.31794 11.8839 5.88388L12.1161 6.11612C12.6821 6.68206 13.4496 7 14.25 7C15.0504 7 15.8179 6.68206 16.3839 6.11612L16.6161 5.88388C17.1821 5.31794 17.9496 5 18.75 5C19.5504 5 20.3179 5.31794 20.8839 5.88388L21.5 6.5M2.5 11.5L3.11612 12.1161C3.68206 12.6821 4.44964 13 5.25 13C6.05036 13 6.81794 12.6821 7.38388 12.1161L7.61612 11.8839C8.18206 11.3179 8.94964 11 9.75 11C10.5504 11 11.3179 11.3179 11.8839 11.8839L12.1161 12.1161C12.6821 12.6821 13.4496 13 14.25 13C15.0504 13 15.8179 12.6821 16.3839 12.1161L16.6161 11.8839C17.1821 11.3179 17.9496 11 18.75 11C19.5504 11 20.3179 11.3179 20.8839 11.8839L21.5 12.5M2.5 17.5L3.11612 18.1161C3.68206 18.6821 4.44964 19 5.25 19C6.05036 19 6.81794 18.6821 7.38388 18.1161L7.61612 17.8839C8.18206 17.3179 8.94964 17 9.75 17C10.5504 17 11.3179 17.3179 11.8839 17.8839L12.1161 18.1161C12.6821 18.6821 13.4496 19 14.25 19C15.0504 19 15.8179 18.6821 16.3839 18.1161L16.6161 17.8839C17.1821 17.3179 17.9496 17 18.75 17C19.5504 17 20.3179 17.3179 20.8839 17.8839L21.5 18.5" stroke="#b388eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </aside>
+                    <article>
+                        <p>Vento</p>
+                        <span id="speed">0 km/h</span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

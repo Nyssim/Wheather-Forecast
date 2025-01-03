@@ -1,0 +1,54 @@
+@media (max-width: 800px) and (max-height: 1280px) {
+    .card {
+        height: 80%;
+        width: 80%;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+
+    #icon-search {
+        display: none;
+        right: 16%;
+        top: 5em;
+    }
+
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+
+    .card {
+        height: 90%;
+        width: 85%;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .content-wheather article h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-temp {
+        padding: 0.5em;
+    }
+
+    .info-temp aside, .info-temp article  {
+        height: 100%;
+        width: 50%;
+    }
+
+    .info-temp article p {
+        font-size: .75rem;
+    }
+
+    img,svg {
+        transform: scale(0.75);
+    }
+}
